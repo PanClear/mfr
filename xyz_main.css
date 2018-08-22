@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+.logout{
+	font-size:20px;
+	padding:6px 0;
+}
+#menu{
+	text-align:center;
+	width:10%;
+	min-width:100px;
+	float:left;
+}
+#menu ul li a {
+	font-size:16px;
+	font-weight:normal;
+	font-family:楷体,仿宋;
+	border-radius:10px 0 0 5px;
+}
+#main{
+	border:#F0F thin solid;
+	height:450px;
+	overflow:scroll;
+}
+#main,#menu{
+	top:20px;
+	position:relative;
+}
+#main ul{
+	list-style:none;
+	padding-left:15%;
+}
+#main ul li{
+	display:block;
+	border:#699 thin solid;
+	text-indent:2em;	
+	background:#CCC;
+}
+#main ul li h2{
+	margin-top:10px;
+	font-family:黑体, 微软雅黑, sans-serif;
+	font-size:18px;
+	font-weight:bold;
+}
+#main ul li p{
+	font-size:16px;
+	font-weight:normal;
+	font-family:"Times New Roman", Times, serif;
+	margin-bottom:10px;
+	margin-top:10px;
+	letter-spacing:0.2em;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>请登录</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/login.js"></script>
+<script src="js/main.js"></script>
+</head>
+
+<body>
+<table >
+  <tr >
+	<td></td>
+	<td  id="header" style="height:160px;">
+    	<div >
+ 			 <img src="img/logo.jpg"  alt="logo"  /><span>我的小宇宙</span>
+             </div>
+	</td>
+  </tr>
+<tr>
+	<td>
+		<img src="img/biglogo.jpg" alt="logo" name="biglogo" id="biglogo" />
+	</td>
+	<td >
+    <div id="login">
+	<form action="pages/login2.jsp" method="post">
+	<br/>
+	用户ID：<input type="text" id="uid1" name="uid" required="required" /><br/><br/>
+	密&nbsp;码&nbsp;&nbsp;：
+	<input type="password" id="pwd1" name="pwd" required="required"/><br/><br/>
+	<input type="submit" value=" 登录" id="loginbtn" />
+	<br/><a href="javascript:void(0);" onclick="reg();">没有账号？点我注册！</a>
+	</form>
+    </div>
+    <div id="reg" class="hidden">
+    <form action="pages/reg.jsp" method="post">
+    <br/>
+	用户名：<input type="text" id="uname" name="uname" required="required"/><br/><br/>
+	用户ID：<input type="text" id="uid2" name="uid" required="required" /><br/><br/>
+	密&nbsp;码&nbsp;&nbsp;：
+	<input type="password" id="pwd2" name="pwd" required="required"/><br/><br/>
+	<input type="reset" class="hidden" id="reset" />
+	<input type="submit" value=" 注册"  id="regbtn" />
+    <br/><a href="javascript:void(0);" onclick="login();">已有账号，点我登陆！</a>
+	</form>
+    </div>
+	</td>
+</tr>
+<tr>
+	<td></td>
+	<td>
+		<p id="footer"></p>
+	</td>
+</tr>
+</table>
+</body>
+</html>
